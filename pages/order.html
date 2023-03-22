@@ -8,7 +8,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 
   <style>
     table img {
@@ -20,26 +20,23 @@
 
 </head>
 
-<body>
+<body id="order-page">
 
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid px-3 px-md-5">
         <a class="navbar-brand" href="#">Glenn's BakeShop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
+      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+          <ul class="navbar-nav mb-2 mb-md-0 ms-auto">
+            <li class="nav-item px-md-3">
               <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown px-md-3">
               <a class="nav-link dropdown-toggle" href="./category.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Gallery
@@ -55,22 +52,32 @@
                 <li><a class="dropdown-item" href="./gallery.html#promo">Promo</a></li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item order-item px-md-3">
               <a class="nav-link active" href="#">Order</a>
+              <span class="top text-center">3</span>
+            </li>
+            <li class="nav-item px-md-3">
+              <a class="nav-link" href="./feedback.html">Feedback</a>
             </li>
           </ul>
-        
+          <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
         </div>
       </div>
     </nav>
 
   </header>
-
-  <section id="order-table">
-    <div class="container p-md-5">
-
-      <table class="table text-center">
-        <thead>
+<br>
+<br>
+<br>
+  <section id="order-table" class="m-5">
+    <div class="container p-md-5  my-2">
+      <h3 class="my-2 p-2">Order List</h3>
+      <hr>
+      <table class="table text-center table-striped table-hover">
+        <thead class="table-group-divider">
           <tr>
             <th scope="col">#</th>
             <th scope="col">Bread</th>
@@ -100,18 +107,160 @@
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><img src="../images/bread1.jpg" class="img-fluid w-5 h-auto" alt=""></td>
+            <td>
+              <select name="" id="" class="w-100">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+            </td>
+            <td>&#x20B1; 100.00</td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td colspan="2"></td>
-            <td></td>
+            <td><img src="../images/bread1.jpg" class="img-fluid w-5 h-auto" alt=""></td>
+            <td>
+              <select name="" id="" class="w-100">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+            </td>
+            <td>&#x20B1; 100.00</td>
           </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td><img src="../images/bread1.jpg" class="img-fluid w-5 h-auto" alt=""></td>
+            <td>
+              <select name="" id="" class="w-100">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+            </td>
+            <td>&#x20B1; 100.00</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td><img src="../images/bread1.jpg" class="img-fluid w-5 h-auto" alt=""></td>
+            <td>
+              <select name="" id="" class="w-100">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+            </td>
+            <td>&#x20B1; 100.00</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td><img src="../images/bread1.jpg" class="img-fluid w-5 h-auto" alt=""></td>
+            <td>
+              <select name="" id="" class="w-100">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+            </td>
+            <td>&#x20B1; 100.00</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td><img src="../images/bread1.jpg" class="img-fluid w-5 h-auto" alt=""></td>
+            <td>
+              <select name="" id="" class="w-100">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+            </td>
+            <td>&#x20B1; 100.00</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td><img src="../images/bread1.jpg" class="img-fluid w-5 h-auto" alt=""></td>
+            <td>
+              <select name="" id="" class="w-100">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+            </td>
+            <td>&#x20B1; 100.00</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td><img src="../images/bread1.jpg" class="img-fluid w-5 h-auto" alt=""></td>
+            <td>
+              <select name="" id="" class="w-100">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+              </select>
+            </td>
+            <td>&#x20B1; 100.00</td>
+          </tr>
+ 
         </tbody>
         <tfoot class="table-group-divider">
-          <th colspan="3" class="table-active text-center">Total</th>
+          <th colspan="3" class="text-center">Total</th>
           <th>&#x20B1; 150.00</th>
         </tfoot>
       </table>
@@ -121,9 +270,11 @@
     </div>
   </section>
 
-  <section id="order-form" class="mt-5">
-    <h2>CheckOut</h2>
+  <section id="order-form" class="m-5">
+ 
     <div class="container p-md-5">
+      <h3 class="my-2 p-2">CheckOut Form</h3>
+      <hr>
       <form class="row g-3">
         <div class="col-md-6">
           <label for="fullName" class="form-label">Full Name</label>
@@ -195,6 +346,7 @@
       </form>
     </div>
   </section>
+
 
   <footer class="p-3" style="background-color: #74b8e9;">
     <address class="d-flex flex-row justify-content-between align-items-center">

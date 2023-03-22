@@ -3,3 +3,113 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+  background-color: #FFF2CC;
+}
+
+/* NAVBAR - ALL PAGES */
+header > nav {
+  background-color: #F4B183;
+}
+nav ul li{
+  text-transform: uppercase;
+  /* font-weight: bold; */
+  letter-spacing: 2px;
+}
+
+/* Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive. */
+
+/* unvisited link */
+ul li a:link {
+  color: #181818;
+}
+
+/* visited link */
+ul li a:visited {
+  color: #181818;
+  ;
+}
+
+/* mouse over link */
+ul li a:hover {
+  color: #DF7857;
+  font-weight: bold;
+}
+
+/* selected link */
+ul li a:active {
+  color: white;
+  font-weight: 700;
+  background-color: green;
+}
+.top {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    z-index: 10;
+    opacity: 0.9;
+    border-radius: 50%;
+  }
+  .order-item {
+    position: relative;
+    z-index: 10;
+  }
+
+  /* INDEX / HOME */
+
+  /* GALLERY */
+
+  #gallery-page section {
+    background-color: #F4B183;
+  }
+
+  #gallery-page section h3 {
+    background-color: #FFF2CC;
+  }
+
+  #gallery-page section, h3 {
+    border-radius: 10px;
+  }
+
+
+  /* ORDER */
+
+  #order-page section {
+    background-color: #F4B183;
+    margin-top: 30px;
+  }
+  
+  #order-page section h3 {
+    background-color: #FFF2CC;
+  }
+  #order-page section, h3 {
+    border-radius: 10px;
+  }
+
+  #order-page tr:nth-child(even) {
+    background: #FFF2CC;
+  }
+
+  #order-page section hr {
+    border: 2px solid #FFF2CC;
+  }
+
+thead, tfoot {
+    background-color: #DF7857;
+  }
+
+
+
+  /* FEEDBACK */
+
+  /* FOOTER */
+  footer {
+    background-color: #F4B183;
+  }
+  footer img {
+    width: 40px;
+    height: 40px;
+  }

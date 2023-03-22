@@ -9,41 +9,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
-  <style>
-    .top {
-      width: 20px;
-      height: 20px;
-      background-color: red;
-      position: absolute;
-      top: 0px;
-      right: -10px;
-      z-index: 10;
-      opacity: 0.9;
-      border-radius: 50%;
-    }
-    .order-item {
-      position: relative;
-      z-index: 10;
-    }
-  </style>
+
 </head>
 
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container-fluid px-3 px-md-5">
         <a class="navbar-brand" href="#">Glenn's BakeShop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
-            <li class="nav-item">
+          <!-- me-auto remove to make the nav display at the end -->
+          <ul class="navbar-nav mb-2 mb-md-0 ms-auto">
+            <li class="nav-item px-md-3">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item px-md-3 dropdown">
               <a class="nav-link dropdown-toggle" href="./category.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Gallery
@@ -59,15 +44,18 @@
                 <li><a class="dropdown-item" href="./pages/gallery.html#promo">Promo</a></li>
               </ul>
             </li>
-            <li class="nav-item order-item">
+            <li class="nav-item order-item px-md-3">
               <a class="nav-link" href="./pages/order.html">Order</a>
               <span class="top text-center">3</span>
             </li>
+            <li class="nav-item px-md-3">
+              <a class="nav-link" href="./pages/feedback.html">Feedback</a>
+            </li>
           </ul>
-          <form class="d-flex" role="search">
+          <!-- <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          </form> -->
         </div>
       </div>
     </nav>
@@ -97,13 +85,64 @@
     </section>
   </header>
 
-  <footer class="p-3" style="background-color: #74b8e9;">
-    <address class="d-flex flex-row justify-content-between align-items-center">
-      <p class="">&#169;Copyright</p>
-      <p class=""><a href=""><img src="./images/icons/contact_icon.svg" alt="Contact Number">0992-523-5991</a></p>
-      <p class=""><a href="https://m.me/ichad.betalmos1211" target="_blank"><img src="./images/icons/messenger_icon.svg"
-            alt="Messenger">Messenger</a></p>
+  <footer>
+    <!-- <div class="container d-md-flex flex-row justify-content-between align-items-center text-center">
+    <p class="">&#169;Copyright</p>
+    
+    <address class=" d-md-flex">
+    <div class="contact-wrapper  d-md-flex flex-row justify-content-between align-items-center">
+      <a href=""><img src="./images/icons/contact_icon.svg" alt="Contact Number">0992-523-5991</a>
+    </div>
+    <div class="messenger-wrapper">
+      <a href="https://m.me/ichad.betalmos1211" target="_blank"><img src="./images/icons/messenger_icon.svg"
+        alt="Messenger">Messenger</a>
+    </div>
     </address>
+  </div> -->
+    <!-- <div class="container py-3">
+      <div class="row row-cols-1 text-center row-cols-md-2">
+        
+        <div class="col-md-6">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+              <a href=""><img src="./images/icons/contact_icon.svg" alt="Contact Number">0992-523-5991</a>
+            </div>
+            <div class="col">
+              <a href="https://m.me/ichad.betalmos1211" target="_blank"><img src="./images/icons/messenger_icon.svg"
+                  alt="Messenger">Messenger</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center order-lg-1">
+          <p class="">&#169;Copyright</p>
+        </div>
+      </div>
+    </div> -->
+      <div class="row row-cols-1 row-cols-md-2 text-center">
+       <div class="col-md-4">
+        <h4 class=" text-center">Location</h4>
+        <p>We are located at barangay Lapacan Sur, Buenavista, Bohol</p>
+       </div>
+       <div class="col-md-4 text-center">
+        <h4 class=" text-center">Connect with Us</h4>
+        <h5>Message us in</h5>
+        <p><a href="https://m.me/ichad.betalmos1211" target="_blank"><img src="./images/icons/messenger_icon.svg"
+          alt="Messenger"><img src="./images/icons/facebook.png" alt=""></a></p>
+          <p>or</p>
+          <h5>Call & Text us</h5>
+         <p><a href=""><img src="./images/icons/contact_icon.svg" alt="Contact Number">0992-523-5991</a></p> 
+       </div>
+       <div class="col-md-4">
+        <h4 class=" text-center">Opening/Closing Hours</h4>
+        <p>Mon - Sat <u>8:00 AM</u> to <u>7:00 PM</u></p>
+        <p>Sun <u>10:00 AM</u>to <u>7:00 PM</u></p>
+       </div>
+      </div>
+
+      <section class="copyright">
+        <p class="text-center">&#169;Copyright | 2023</p>
+      </section>
+     
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

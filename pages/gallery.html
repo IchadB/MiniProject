@@ -10,20 +10,6 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
 
-    <style>
-        button>img {
-            width: 40px;
-            height: 40px;
-        }
-
-        /* .add-to-cart-alert {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            z-index: 10;
-            width: 100%;
-        } */
-    </style>
 </head>
 
 <body id="gallery-page"> 
@@ -43,8 +29,8 @@
                         <li class="nav-item px-md-3">
                             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item px-md-3 dropdown">
-                            <a class="nav-link active dropdown-toggle" href="./category.html" role="button"
+                        <li class="nav-item px-md-3 dropdown active-list">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Gallery
                             </a>
@@ -78,12 +64,12 @@
     </header>
 
     <div id="gallery-wrapper" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%"
-        data-bs-smooth-scroll="true" class="scrollspy-example p-3 mx-5 rounded-2 mt-5" tabindex="0">
+        data-bs-smooth-scroll="true" class="scrollspy-example mx-5 rounded-2 my-5" tabindex="0">
 
-        <section class="p-2 my-5">
+        <section class="">
             
-            <div class="container w-80 mx-auto my-2">
-                <h3 id="gallery" class="my-5 p-2">Gallery</h3>
+            <div class="container w-80 mx-auto">
+                <h3 id="gallery" class="pt-4">Gallery</h3>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <div class="col">
                         <div class="card">
@@ -150,10 +136,10 @@
         </section>
 
       
-        <section class="p-2 my-5">
+        <section class="mt-5">
            
-            <div class="container w-80 mx-auto my-2">
-                <h3 id="breads" class=" my-5 p-2">Breads</h3>
+            <div class="container w-80 mx-auto">
+                <h3 id="breads" class="">Breads</h3>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <div class="col">
                         <div class="card">
@@ -240,9 +226,9 @@
         </section>
 
        
-        <section class="p-2 my-5">
-            <div class="container w-80 mx-auto my-2">
-                <h3 id="cakes" class=" my-5 p-2">Cakes</h3>
+        <section class="mt-5">
+            <div class="container w-80 mx-auto">
+                <h3 id="cakes" class="">Cakes</h3>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <div class="col">
                         <div class="card">
@@ -329,9 +315,9 @@
         </section>
 
       
-        <section class="p-2 my-5">
-            <div class="container w-80 mx-auto my-2">
-                <h3 id="drinks" class=" my-5 p-2">Drinks</h3>
+        <section class="mt-5">
+            <div class="container w-80 mx-auto">
+                <h3 id="drinks" class="">Drinks</h3>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <div class="col">
                         <div class="card">
@@ -419,9 +405,9 @@
         </section>
 
     
-        <section class="p-2 my-5">
-            <div class="container w-80 mx-auto my-2">
-                <h3 id="promo" class=" my-5 p-2">Promo</h3>
+        <section class="mt-5">
+            <div class="container w-80 mx-auto">
+                <h3 id="promo" class="">Promo</h3>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <div class="col">
                         <div class="card">
@@ -508,14 +494,40 @@
         </section>
     </div>
 
-    <footer class="p-3" style="background-color: #74b8e9;">
-        <address class="d-flex flex-row justify-content-between align-items-center">
-            <p class="">&#169;Copyright</p>
-            <p class=""><a href=""><img src="./images/icons/contact_icon.svg" alt="Contact Number">0992-523-5991</a></p>
-            <p class=""><a href="https://m.me/ichad.betalmos1211" target="_blank"><img
-                        src="./images/icons/messenger_icon.svg" alt="Messenger">Messenger</a></p>
-        </address>
-    </footer>
+    <footer class="">
+        <div class="row row-cols-1 row-cols-lg-3 px-2 px-lg-5">
+          <div class="col-lg">
+            <h4 class="mt-3 text-md-center">Opening/Closing Hours</h4>
+            <p class="text-center mt-lg-5">Mon - Fri <u><span class="h6">8:00 AM</span></u> to <span class="h6"><u>7:00
+                  PM</u></span></p>
+            <p class="text-center">Sat - Sun <u><span class="h6"> 10:00 AM</span></u> to <span class="h6"><u>7:00
+                  PM</u></span></p>
+          </div>
+          <div class="col-lg">
+            <h4 class="mt-3 text-md-center">Location</h4>
+            <div class="map-container text-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.7479187013064!2d124.12040401424132!3d10.03764847514035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa213d23d5f485%3A0xbd28d38e2618ea3f!2sLapacan%20sur%20Inabanga%20Bohol!5e0!3m2!1sen!2sph!4v1679535228132!5m2!1sen!2sph"
+              width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="col-lg">
+            <h4 class="my-3 text-md-center">Connect with Us</h4>
+            <div class="icon-container text-center my-lg-5">
+              <span class="connect-w-us-icons mx-3"><img src="../images/icons/messenger_icon.svg" alt="Messenger"></span>
+              <span class="connect-w-us-icons mx-3"><img src="../images/icons/facebook.png" alt="Facebook"></span>
+              <span class="connect-w-us-icons mx-3"><img src="../images/icons/contact_icon.svg" alt="Contact Number"></span>
+              <p class="mt-3 mt-lg-5">Call or Text: <span class="h5"><u>0992-523-5991</u> </span></p>
+            </div>
+          </div>
+        </div>
+    
+        <section class="copyright">
+          <p class="h6 text-center p-3">&#169;Copyright | 2023</p>
+        </section>
+    
+      </footer>
 
     <script type="text/javascript">
         const showAlert = () => {

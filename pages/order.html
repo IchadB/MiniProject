@@ -17,7 +17,7 @@
   <header>
     <nav class="navbar navbar-expand-md fixed-top">
       <div class="container-fluid px-3 px-md-5">
-        <a class="navbar-brand" href="#">Glenn's BakeShop</a>
+        <a class="navbar-brand" href="#"><img src="../images/profile-img/glen-flores.jpg" class="nav-profile-img" alt="Profile-image"> Glenn's BakeShop</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
             </li>
             <li class="nav-item order-item px-md-3 active-list">
               <a class="nav-link active" href="#">Order</a>
-              <span class="top text-center">3</span>
+              <span class="top text-center active">5</span>
             </li>
             <li class="nav-item px-md-3">
               <a class="nav-link" href="./feedback.html">Feedback</a>
@@ -63,13 +63,13 @@
   </header>
 
   <section id="order-table" class="mx-2 my-5">
-    <div class="container pt-md-4">
+    <div class="container pt-md-5">
       <h3 class="pt-4 pt-md-1">Order List</h3>
       <table class="table text-center table-striped table-hover">
         <thead class="table-group-divider">
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Bread</th>
+            <th class="text-start" scope="col">Bread</th>
             <th scope="col">Quantity</th>
             <th scope="col">Sub-Total</th>
             <th></th>
@@ -78,9 +78,10 @@
         <tbody class="table-group-divider">
           <tr>
             <th scope="row">1</th>
-            <td><img src="../images/bread1.jpg" class="img-fluid order-img" alt=""></td>
+            <td class="text-start"><img src="../images/Breads/ensaymada.jpg" class="img-fluid order-img mx-2" alt="">Ensaymada</td>
             <td>
               <select name="" id="" class="w-100">
+                <option value="">5</option>
                 <option value="">1</option>
                 <option value="">2</option>
                 <option value="">3</option>
@@ -93,14 +94,15 @@
                 <option value="">10</option>
               </select>
             </td>
-            <td>&#x20B1; 100.00</td>
+            <td>&#x20B1; 20.00</td>
             <td><img src="../images/icons/delete-icon2.svg" class="icon" alt="Delete"></td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td><img src="../images/bread1.jpg" class="img-fluid order-img" alt=""></td>
+            <td class="text-start"><img src="../images/Breads/pandesal.jpg" class="img-fluid order-img mx-2" alt="">Pandesal</td>
             <td>
               <select name="" id="" class="w-100">
+                <option value="">10</option>
                 <option value="">1</option>
                 <option value="">2</option>
                 <option value="">3</option>
@@ -113,14 +115,15 @@
                 <option value="">10</option>
               </select>
             </td>
-            <td>&#x20B1; 100.00</td>
+            <td>&#x20B1; 30.00</td>
             <td><img src="../images/icons/delete-icon2.svg" class="icon" alt="Delete"></td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td><img src="../images/bread1.jpg" class="img-fluid order-img" alt=""></td>
+            <td  class="text-start"><img src="../images/Breads/Kalihim.jpg" class="img-fluid order-img mx-2" alt="">Kalihim</td>
             <td>
               <select name="" id="" class="w-100">
+                <option value="">5</option>
                 <option value="">1</option>
                 <option value="">2</option>
                 <option value="">3</option>
@@ -133,14 +136,15 @@
                 <option value="">10</option>
               </select>
             </td>
-            <td>&#x20B1; 100.00</td>
+            <td>&#x20B1; 20.00</td>
             <td><img src="../images/icons/delete-icon2.svg" class="icon" alt="Delete"></td>
           </tr>
           <tr>
             <th scope="row">4</th>
-            <td><img src="../images/bread1.jpg" class="img-fluid order-img" alt=""></td>
+            <td class="text-start"><img src="../images/Breads/pandecoco.jpg" class="img-fluid order-img mx-2" alt="pandecoco">Pandecoco</td>
             <td>
               <select name="" id="" class="w-100">
+                <option value="">4</option>
                 <option value="">1</option>
                 <option value="">2</option>
                 <option value="">3</option>
@@ -153,12 +157,12 @@
                 <option value="">10</option>
               </select>
             </td>
-            <td>&#x20B1; 100.00</td>
+            <td>&#x20B1; 30.00</td>
             <td><img src="../images/icons/delete-icon2.svg" class="icon" alt="Delete"></td>
           </tr>
           <tr>
             <th scope="row">5</th>
-            <td><img src="../images/bread1.jpg" class="img-fluid order-img" alt=""></td>
+            <td class="text-start"><img src="../images/drinks/royal1-5.jpg" class="img-fluid order-img mx-2" alt="royal1-5">Royal 1.5</td>
             <td>
               <select name="" id="" class="w-100">
                 <option value="">1</option>
@@ -173,7 +177,7 @@
                 <option value="">10</option>
               </select>
             </td>
-            <td>&#x20B1; 100.00</td>
+            <td>&#x20B1; 70.00</td>
             <td><img src="../images/icons/delete-icon2.svg" class="icon" alt="Delete"></td>
           </tr>
 
@@ -181,7 +185,7 @@
 
         <tfoot class="table-group-divider">
           <th colspan="3" class="h3 text-center">Total</th>
-          <th class="h3">&#x20B1; 150.00</th>
+          <th class="h3">&#x20B1; 170.00</th>
           <th></th>
         </tfoot>
 
@@ -189,15 +193,16 @@
       
       <a href="./gallery.html" class="btn" id="back-to-shop"><img id="back-icon" src="../images/icons/left-arrow.png" alt="Back"> Continue Shopping</a>
       <button class="btn" id="btn-clear"><img id="clear-icon" src="../images/icons/delete-icon2.svg" alt="Clear"> Clear Orders</button>
-      <button class="btn d-block w-100 my-3" id="btn-checkout"><img id="checkout-icon" src="../images/icons/checkout-icon2.png" alt="Checkout"> Checkout</button>
+      <button class="btn d-block w-100 my-3" id="btn-checkout" type="button" data-bs-toggle="collapse" data-bs-target="#order-form"><img id="checkout-icon" src="../images/icons/checkout-icon2.png" alt="Checkout"> Checkout</button>
 
     </div>
   </section>
 
-  <section id="order-form" class="mb-5">
+  <section id="order-form" class="collapse mb-5">
  
     <div class="container">
       <h3 class="mb-4">CheckOut Form</h3>
+
       <form class="row g-3 px-md-3">
         <div class="col-md-6">
           <label for="fullName" class="form-label">Full Name</label>
@@ -237,21 +242,32 @@
           <label for="inputState" class="form-label">Municipality</label>
           <select id="inputState" class="form-select">
             <option selected>Choose...</option>
-            <option>...</option>
+            <option value="">Buenavista</option>
+            <option value="">Inabanga</option>
+            <option value="">Getafe</option>
+            <option value="">Clarin</option>
+            <option value="">Tubigon</option>
           </select>
         </div>
         <div class="col-md-6">
           <label for="inputState" class="form-label">Barangay</label>
           <select id="inputState" class="form-select">
             <option selected>Choose...</option>
-            <option>...</option>
+            <option value="">Lapacan Sur</option>
+            <option value="">Lapacan Norte</option>
+            <option value="">Bugaong</option>
+            <option value="">Cantumugcad</option>
+            <option value="">Quary</option>
           </select>
         </div>
         <div class="col-md-6">
           <label for="inputState" class="form-label">Sitio</label>
           <select id="inputState" class="form-select">
             <option selected>Choose...</option>
-            <option>...</option>
+            <option value="">Mabuhay</option>
+            <option value="">Masigla</option>
+            <option value="">Sapa</option>
+            <option value="">Bangkal</option>
           </select>
         </div>
         <div class="col-md-6">
@@ -267,9 +283,11 @@
           </div>
         </div> -->
         <div class="col-12 my-4">
-          <button type="submit" class="btn btn-block w-100" id="submit-order"><img id="checkout-icon" src="../images/icons/checkout-icon2.png" alt="Checkout"> Take My Order</button>
+          <div id="liveAlertPlaceholder" class="mb-3"></div>
+          <button type="" class="btn btn-block w-100" id="submit-order"><img id="checkout-icon" src="../images/icons/checkout-icon2.png" alt="Checkout"> Take My Order</button>
         </div>
       </form>
+
     </div>
   </section>
 
@@ -307,6 +325,29 @@
     </section>
 
   </footer>
+
+  <script>
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('submit-order')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('Yor order has been recorder. Please wait for a few minutes! THANK YOU!')
+  })
+}
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

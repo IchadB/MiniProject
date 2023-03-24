@@ -3,6 +3,9 @@
   --secondColor: ;
   --thirdColor: ;
 } */
+
+/* ALL PAGES */
+
 * {
   padding: 0;
   margin: 0;
@@ -14,16 +17,42 @@ body {
   font-family: monospace;
 }
 
-header li, footer h4, .copyright, thead, tfoot, h3 {
+header li,
+footer h4,
+.copyright,
+thead,
+tfoot,
+h3 {
   font-family: sans;
   letter-spacing: 2px;
+}
+
+span.active {
+  font-weight: bold;
+}
+
+button[value="submit"] {
+  display: block;
+  background-color: #DF7857;
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+button[value="submit"]:hover {
+  outline: 2px solid #DF7857;
+  font-weight: bold;
 }
 
 /* NAVBAR - ALL PAGES */
 header>nav {
   background-color: #F4B183;
 }
-
+header nav .nav-profile-img{
+  width: 40px;
+  height: 50px;
+  border-radius: 50%;
+}
 nav ul li {
   text-transform: uppercase;
 }
@@ -37,10 +66,45 @@ nav ul li.active-list {
 .dropdown-menu {
   background-color: #FFF2CC;
 }
+
 .dropdown-menu a.active {
   background-color: #DF7857;
 }
+header .banner {
+  position: relative;
+}
+header .banner-img {
+  width: 100%;
+  height: 500px;
+}
 
+header .img-text {
+  width: 20rem;
+  height: 50px;
+  background-color: #FFF2CC;
+  border: 1px solid #DF7857;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 60px;
+}
+header .banner-text-container {
+  width: 100%;
+  height: 150px;
+  background-color: #FFF2CC;
+  position: absolute;
+  top: 200px;
+}
+header .banner-text-container p {
+  font-style: italic;
+  font-size: 2rem;
+}
+header .banner-text-container p::before {
+  content: '" ';
+}
+header .banner-text-container p::after {
+  content: ' "';
+}
 /* Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective! a:active MUST come after a:hover in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive. */
 
 /* unvisited link */
@@ -78,14 +142,65 @@ ul li .top {
 /* INDEX / HOME */
 
 /* GALLERY */
+#gallery-page .gallery-all-container .card-title {
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 10;
+}
 
-#gallery-page section {
-  border-radius: 10px;
+#gallery-page .card {
+  border: 1px solid #DF7857;
+  box-shadow: 2px 2px 3px 2px #DF7857;
+  z-index: 5;
+}
+
+#gallery-page .card-img-top {
+  width: 100%;
+  height: 200px;
+  border-bottom: 1px solid #DF7857;
+}
+
+#gallery-page button {
+  background-color: #DF7857;
+}
+
+#gallery-page button:hover {
+  background-color: #FFF2CC;
+  border: 1px solid #DF7857;
+  font-weight: bold;
 }
 
 #gallery-page button>img {
   width: 40px;
   height: 40px;
+  margin-top: -10px;
+}
+
+/* 
+#gallery-page #promo-container {
+  position: relative;
+} */
+#gallery-page #promo-container .card {
+  position: relative;
+}
+
+#gallery-page #promo-container .promo-text-wrapper {
+  width: 200px;
+  height: 40px;
+  background-color: #FFD966;
+  border-left: 2px solid #DF7857;
+  border-bottom: 2px solid #DF7857;
+  border-radius: 5px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 10;
+}
+
+#gallery-page hr.header-hr {
+  height: 3px;
+  background-color: #FFF2CC;
+  outline: 1px solid #DF7857;
   margin-top: -10px;
 }
 
@@ -98,6 +213,9 @@ h3 {
 
 #order-page tr:nth-child(even) {
   background: #F4B183;
+}
+#order-page tr:nth-child(odd) {
+  background: transparent;
 }
 
 #order-page section hr {
@@ -114,7 +232,9 @@ tfoot {
   width: 15px;
 }
 
-#order-page img#back-icon, img#clear-icon, img#checkout-icon {
+#order-page img#back-icon,
+img#clear-icon,
+img#checkout-icon {
   height: auto;
   width: 15px;
 }
@@ -126,8 +246,9 @@ tfoot {
 
 #order-page table .order-img {
   width: 50px;
-  height: auto;
+  height: 50px;
   border-radius: 50%;
+  border: 1px solid #DF7857;
 }
 
 #order-page form {
@@ -142,31 +263,42 @@ tfoot {
 #order-page #back-to-shop {
   background-color: #F4B183;
 }
+
 #order-page #back-to-shop:hover {
   background-color: transparent;
   border: 1px solid #F4B183;
 }
+
 #order-page #btn-clear {
   border: 1px solid #F4B183;
 }
+
 #order-page #btn-clear:hover {
   background-color: #F4B183;
 }
+
 #order-page #btn-checkout {
   background-color: #DF7857;
   text-transform: uppercase;
 }
+
 #order-page #btn-checkout:hover {
   border: 1px solid #F4B183;
   font-weight: bold;
 }
+
 #order-page #submit-order {
   background-color: #DF7857;
   text-transform: uppercase;
 }
+
 #order-page #submit-order:hover {
   border: 1px solid #F4B183;
   font-weight: bold;
+}
+
+#order-page #liveAlertPlaceholder {
+  background-color: #FFF2CC;
 }
 
 /* FEEDBACK */
@@ -188,27 +320,33 @@ position: relative;
   height: auto;
   z-index: 5;
 }
+
 #feedback-page .profile-img {
   width: 100px;
   height: auto;
+  border: 1px solid #DF7857;
   border-radius: 50%;
 }
+
 #feedback-page #message-icon1 {
   transform: rotateY(180deg);
   position: absolute;
   left: 50px;
 }
+
 #feedback-page #message-icon2 {
   position: absolute;
   top: 200px;
   right: 50px;
 }
+
 #feedback-page #message-icon3 {
   transform: rotateY(180deg);
   position: absolute;
   top: 400px;
   left: 50px;
 }
+
 #feedback-page #message-icon4 {
   position: absolute;
   top: 600px;
@@ -220,50 +358,65 @@ position: relative;
   top: 270px;
   left: 15px;
 }
+
 #feedback-page #profile-img2 {
   position: absolute;
   top: 480px;
   right: 15px;
 }
+
 #feedback-page #profile-img3 {
   position: absolute;
   top: 680px;
   left: 15px;
 }
+
 #feedback-page #profile-img4 {
   position: absolute;
   top: 890px;
   right: 15px;
 }
-#feedback-page .box{
+
+#feedback-page .box {
   height: 175px;
   width: 250px;
   background-color: #F4B183;
   border-radius: 15px;
   z-index: 1;
 }
+
 #feedback-page .box-1 {
   position: absolute;
   left: 75px;
   top: 37px;
 }
+
 #feedback-page .box-2 {
   position: absolute;
   right: 75px;
   top: 237px;
 }
+
 #feedback-page .box-3 {
   position: absolute;
   top: 438px;
   left: 75px;
 }
+
 #feedback-page .box-4 {
   position: absolute;
   right: 75px;
   top: 638px;
 }
+
 #feedback-page .message-chat {
- color: #181818;
+  color: #181818;
+}
+
+#feedback-page textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
 }
 
 /* FOOTER */

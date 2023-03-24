@@ -31,19 +31,6 @@ span.active {
   font-weight: bold;
 }
 
-button[value="submit"] {
-  display: block;
-  background-color: #DF7857;
-  width: 100%;
-  text-transform: uppercase;
-  margin-top: 5px;
-}
-
-button[value="submit"]:hover {
-  outline: 2px solid #DF7857;
-  font-weight: bold;
-}
-
 /* NAVBAR - ALL PAGES */
 header>nav {
   background-color: #F4B183;
@@ -245,6 +232,9 @@ tfoot {
   height: auto;
   width: 15px;
 }
+#order-page td img.icon:hover {
+  cursor: pointer;
+}
 
 #order-page img#back-icon,
 img#clear-icon,
@@ -433,18 +423,36 @@ position: relative;
   padding: 10px;
 }
 
+button[value="submit"] {
+  display: block;
+  background-color: #DF7857;
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+button[value="submit"]:hover {
+  outline: 2px solid #DF7857;
+  font-weight: bold;
+}
+
+
 /* FOOTER */
 footer {
   background-color: #F4B183;
 }
 
-footer img, .cell-no {
+footer img {
   width: 40px;
   height: 40px;
-  cursor: pointer;
+  border-radius: 10px;
 }
-footer img {
+footer img:hover {
+  border: 2px solid #FFF2CC;
   
+}
+footer .cell-no:hover {
+  border: 2px solid #FFF2CC;
 }
 footer p {
   font-size: 12px;
@@ -561,8 +569,8 @@ footer p {
 }
   
 } 
-@media (min-width: 1115px){
+@media (min-width: 1116px){
   #gallery-page .for-text-transform{
-    font-size: 13px;
+    font-size: 17px;
   }
 }
